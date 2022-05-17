@@ -5,10 +5,23 @@ public class Bigrams {
 	public static class Pair<T1, T2> {
 		public T1 first;
 		public T2 second;
+        public int hashCode;
 		public Pair(T1 first, T2 second) {
 			this.first = first;
 			this.second = second;
+		    this.hashCode = Objects.hash(first, second);
 		}
+
+		@Override
+		public boolean equals(Object other) {
+		    if (this == other) return true;
+		    if (other == null || getClass() != other.getClass()) return false;
+		    Pair<String, String> otherPair = (Pair<String, String>) other;
+		    return this.first.equals(otherPair.first) && this.second.equals(otherPair.second);
+		}
+
+		@Override
+		public int hashCode() { return this.hashCode; }
 	}
 
 	protected Map<Pair<String, String>, Float> bigramCounts;

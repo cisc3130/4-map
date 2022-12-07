@@ -1,0 +1,55 @@
+java Bigrams gutenberg/austen-emma.txt 
+(with, me)
+with appears 1208.00 times.
+(with, me) appears 30.00 times.
+0.0248
+(the, grass)
+Bigram not found.
+the appears 5146.00 times.
+(the, grass) appears 0.00 times.
+0.0000
+(the, king)
+the appears 5146.00 times.
+(the, king) appears 1.00 times.
+0.0002
+(to, you)
+to appears 5149.00 times.
+(to, you) appears 78.00 times.
+0.0151
+
+java Bigrams gutenberg/shakespeare-macbeth.txt
+(with, me)
+with appears 153.00 times.
+(with, me) appears 2.00 times.
+0.0131
+(the, grass)
+Bigram not found.
+the appears 647.00 times.
+(the, grass) appears 0.00 times.
+0.0000
+(the, king)
+the appears 647.00 times.
+(the, king) appears 11.00 times.
+0.0170
+(to, you)
+to appears 383.00 times.
+(to, you) appears 10.00 times.
+0.0261
+
+java Bigrams gutenberg/whitman-leaves.txt 
+(with, me)
+with appears 1245.00 times.
+(with, me) appears 46.00 times.
+0.0369
+(the, grass)
+the appears 10029.00 times.
+(the, grass) appears 20.00 times.
+0.0020
+(the, king)
+the appears 10029.00 times.
+(the, king) appears 1.00 times.
+0.0001
+(to, you)
+to appears 2150.00 times.
+(to, you) appears 81.00 times.
+0.0377
